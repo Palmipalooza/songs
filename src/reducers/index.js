@@ -1,4 +1,5 @@
-// Reducers
+import { combineReducers } from 'redux';
+
 const songsReducer = () => {
   return [
     { title: 'Dark Side of the Moon', duration: '4:35' },
@@ -15,3 +16,8 @@ const selectedSongReducer = (selectedSong = null, action) => {
 
   return selectedSong;
 };
+
+export default combineReducers({
+  songs: songsReducer,
+  selectedSong: selectedSongReducer,
+});
