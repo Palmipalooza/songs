@@ -2,21 +2,21 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class SongList extends Component {
-  // method that gets our list of songs, maps over them, and returns them as jsx
   renderList() {
-    const list = this.props.songs.map(song => {
+    return this.props.songs.map(song => {
       return (
-        <div>
-          title: {song.title}
-          <div>duration: {song.duration}</div>
+        <div className="item" key={song.title}>
+          <div className="right floated content">
+            <button className="ui button primary">Select</button>
+          </div>
+          <div className="content">{song.title}</div>
         </div>
       );
     });
-    return list;
   }
 
   render() {
-    return <div>Song List: {this.renderList()}</div>;
+    return <div>{this.renderList()}</div>;
   }
 }
 
