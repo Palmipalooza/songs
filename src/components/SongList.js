@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import action creator
 import { selectSong } from '../actions';
 
 class SongList extends Component {
@@ -31,5 +30,4 @@ const mapStateToProps = state => {
   return { songs: state.songs };
 };
 
-// { selectSong: selectSong }
 export default connect(mapStateToProps, { selectSong })(SongList);
