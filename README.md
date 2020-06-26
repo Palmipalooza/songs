@@ -1,7 +1,5 @@
 React :: Redux :: Semantic ui
 
-Fork :: Clone :: Run
-
-### `npm start`
+Demo:
 
 ![picture](demo.png)
