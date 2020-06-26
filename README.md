@@ -1,5 +1,7 @@
-React :: Redux :: Semantic ui :: Semantic ui Grid
+React :: Redux :: Semantic ui
 
 Fork :: Clone :: Run
 
 ### `npm start`
+
+![picture](demo.png)
